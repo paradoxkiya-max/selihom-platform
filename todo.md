@@ -1,0 +1,58 @@
+# Selihom NGO Platform TODO
+
+- [x] Create project TODO and implementation tracking checklist
+- [x] Establish professional NGO styling with Tailwind CSS & Google Fonts (Inter + Noto Sans Ethiopic)
+- [x] Build bilingual i18n context (English & Amharic) with persistent language toggle
+- [x] Build public pages: Home, About, Services, Mental Health Awareness, Stories, Gallery, Blog, Events, Contact, Press
+- [x] Build conversion journeys: Donation flow (`/donate` and `/donate/success`), Volunteer multi-step form, Contact form, Newsletter signup
+- [x] Configure Firebase client integration (`firebase.ts`) with user-provided config (`firebaseConfig`) for Firestore, Storage, Auth, and Analytics
+- [x] Implement robust backend tRPC routers and Firestore database schema for posts, events, gallery, stories (with consent flag), volunteers, donations, and settings
+- [x] Build Admin CMS dashboard (`/admin`) with role-based auth guards (`editor` / `admin`), CRUD management, and volunteer inbox
+- [x] Build Algorithmic Impact Insights dashboard with live metrics, charts, and content engagement analytics
+- [x] Build LLM-powered writing assistant for staff to draft bilingual posts and impact reports
+- [x] Implement automated staff notifications and donor/applicant confirmation emails
+- [x] Run unit tests, verify responsive layouts across all breakpoints, and save project checkpoint
+- [x] Analyze Kasha reference site layout, typography, glassmorphic effects, and high-end multimedia polish
+- [x] Upgrade Selihom design system with refined typography, glassmorphism, cinematic imagery cards, and high-end transitions inspired by reference
+- [x] Verify updated UI aesthetics and save final checkpoint
+- [x] Generate real Ethiopian documentary imagery using AI generation for Selihom programs and community outreach
+- [x] Integrate generated Ethiopian visuals and reference typography across Home, About, Services, Awareness, and Gallery pages
+- [x] Verify visual presentation, test layouts, and save final checkpoint
+- [x] Audit and repair navbar spacing, header overlaps, and container padding across all viewports
+- [x] Ensure all buttons and call-to-actions correctly redirect to intended routes or trigger interactive modals
+- [x] Implement robust dynamic data loading and popup dialogs for donations, volunteer application, contact, and CMS actions
+- [x] Verify functionality with unit tests, take visual regression screenshots, and save final checkpoint
+- [x] Replace footer Privacy Policy and Terms of Use dead-end links with dedicated legal routes
+- [x] Re-audit key CTA targets and popup entry points after the legal-route fix
+- [x] Save a new checkpoint after the complete bug-fix iteration
+- [x] Provision Firebase Auth accounts for natnael@gmail.com (admin) and paradox@gmail.com (editor) with password 12345678 using Firebase Admin SDK
+- [x] Set custom claims (`role: admin` and `role: editor`) on the provisioned Firebase accounts
+- [x] Verify staff login capability against the protected admin CMS dashboard
+- [x] Save the secured project checkpoint and push updates to GitHub
+- [x] Implement database-backed bilingual page content collection in Firestore for every public page (Home, About, Services, Awareness, Stories, Gallery, Blog, Events, Contact, Press, Legal)
+- [x] Build Firestore seeding and management helpers for page blocks, hero banners, metrics, and SEO metadata
+- [x] Connect all public pages and navigation components to live Firestore subscriptions with safe offline/fallback content
+- [x] Extend Admin CMS dashboard with a dedicated Page Content Manager (live editing, bilingual fields, status toggle, preview mode, and role restriction enforcement)
+- [x] Verify live page editing, staff/admin permission boundaries, and save secured checkpoint
+- [x] Implement Firestore-managed SEO metadata and metrics helpers
+- [x] Add SEO fields and metrics editor to the page content model and CMS
+- [x] Expose SEO fields in Page Content Manager and render in document head
+- [x] Build connected sidebar CMS shell and CRUD editors for posts, events, gallery, stories, volunteers, and donations
+- [x] Add intentional volunteer and donation inbox actions for status, notes, and archive without fabricating submissions
+- [x] Complete missing Amharic fields across post, event, gallery, and story editors
+- [x] Verify sidebar CMS create, edit, publish/status, and delete flows for each supported module
+- [x] Add automated tests for connected collection payloads, inbox actions, consent safeguards, and role-restricted CMS access
+- [x] Record explicit QA evidence for sidebar module workflows and keep production inboxes free of fabricated submissions
+- [x] Add module-matrix tests for every sidebar CMS collection and role action
+- [x] Record concrete QA results for editor workflows and sidebar navigation after the final code revision
+- [x] Replace the published horizontal CMS navigation with a persistent desktop left sidebar and a compact mobile drawer
+- [x] Add visible create actions to Posts, Events, Gallery, and Stories while keeping Volunteers and Donations submission-only for creation with permitted staff follow-up actions
+- [x] Verify the corrected authenticated CMS layout on the public production domain
+- [x] Add comprehensive role-action coverage for all sidebar modules, including Pages, Settings, and Writing Assistant
+- [x] Verify the editor account’s final sidebar access and destructive-action restriction in the browser
+- [x] Record the final editor-role QA result in the project findings
+- [x] Add explicit role-behavior coverage for Pages, Settings, Writing Assistant, and Insights
+- [x] Confirm the final editor-role QA result is persisted in qa_findings.md
+- [x] Create and verify the Vercel production deployment at selihom-live.vercel.app
+- [ ] Proxy Manus-hosted visual assets through the Vercel configuration so media loads on the Vercel domain
+- [ ] Verify the Vercel homepage renders its editorial imagery after the asset-delivery correction
